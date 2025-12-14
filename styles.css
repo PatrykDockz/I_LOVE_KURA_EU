@@ -168,3 +168,157 @@ footer {
   background-size: cover;
 }
 
+/* Shop Banner */
+.shop-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 30px;
+}
+
+.shop-banner h1 {
+  font-size: 42px;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+
+.shop-banner p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Product Cards */
+.product-card {
+  max-width: 350px;
+  margin: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+}
+
+.product-card .mdl-card__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card .mdl-card__media img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .mdl-card__media img {
+  transform: scale(1.05);
+}
+
+/* Favorite Icon */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.1);
+}
+
+.favorite-icon .material-icons {
+  font-size: 20px;
+  color: #ff4081;
+}
+
+/* Badges */
+.badge-new, .badge-sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.badge-new {
+  background: #4CAF50;
+}
+
+.badge-sale {
+  background: #FF5722;
+}
+
+/* Product Info */
+.product-rating {
+  color: #FFC107;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-to-cart-btn .material-icons {
+  font-size: 18px;
+}
+
+/* Cart in Navigation */
+.mdl-navigation__link .material-icons {
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Footer Tagline */
+.footer-tagline {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin: 5px 0 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .shop-banner h1 {
+    font-size: 32px;
+  }
+  
+  .shop-banner p {
+    font-size: 16px;
+  }
+  
+  .product-card {
+    max-width: 100%;
+  }
+}
+

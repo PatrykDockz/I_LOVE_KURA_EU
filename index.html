@@ -17,237 +17,229 @@
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">I LOVE KURA EU</span>
-                </span>
+        <header class="shop-header">
+            <div class="shop-info">
+                <img src="images/logo.png" alt="Shop Logo" class="shop-logo" onerror="this.style.display='none'">
+                <div class="shop-details">
+                    <h1>ILOVEKURAeu</h1>
+                    <p class="shop-location">Frankfurt am Main, Hessen</p>
+                    <div class="shop-stats">
+                        <span class="rating">⭐ 4.9(20)</span>
+                        <span class="sales">233 Verkäufe</span>
+                    </div>
+                </div>
+                <div class="shop-actions">
+                    <button class="action-btn">Kontakt</button>
+                    <button class="action-btn">Folgen</button>
+                </div>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Shop</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                    <a class="mdl-navigation__link" href="#cart"><i class="material-icons">shopping_cart</i> Cart (0)</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Shop</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                <a class="mdl-navigation__link" href="#cart"><i class="material-icons">shopping_cart</i> Cart (0)</a>
+            <nav class="shop-nav">
+                <a href="#" class="active">Artikel</a>
+                <a href="#">Bewertungen</a>
+                <a href="#">Info</a>
+                <a href="#">AGB</a>
             </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="shop-banner">
-                <h1>Handmade Kurami Products</h1>
-                <p>Unique and lovingly crafted items for you and your loved ones</p>
-            </div>
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work01.jpg" border="0" alt="Kurami Plush Toy">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+        </header>
+
+        <main class="shop-main">
+            <aside class="shop-sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="Nach allen Artikeln von 53 suchen">
+                    <i class="material-icons">search</i>
+                </div>
+                <div class="category-list">
+                    <div class="category-item active">
+                        <span>Alle</span>
+                        <span class="count">53</span>
                     </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Plush Toy</h2>
+                    <div class="category-item">
+                        <span>Im Sale</span>
+                        <span class="count">53</span>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (128)</div>
-                        <div class="product-price">€24.99</div>
-                        Handmade soft plush toy, perfect for cuddles and decoration
+                    <div class="category-item">
+                        <span>Dach</span>
+                        <span class="count">10</span>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                    <div class="category-item">
+                        <span>Musselin</span>
+                        <span class="count">4</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Schulbladen</span>
+                        <span class="count">6</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Lattenrost</span>
+                        <span class="count">5</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Rausfallschutz</span>
+                        <span class="count">12</span>
+                    </div>
+                    <div class="category-item">
+                        <span>NestUp</span>
+                        <span class="count">7</span>
+                    </div>
+                    <div class="category-item">
+                        <span>RAKETE Serie</span>
+                        <span class="count">4</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Weihnachtsdeko</span>
+                        <span class="count">4</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Geschenkideen</span>
+                        <span class="count">1</span>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work07.jpg" border="0" alt="Kurami Keychain">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                        <div class="badge-new">NEW</div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Keychain</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (85)</div>
-                        <div class="product-price">€8.99</div>
-                        Cute mini keychain, perfect accessory for your keys or bag
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                <button class="special-order-btn">📋 Spezialanfertigung</button>
+                <button class="contact-owner-btn">✉ Shop-Inhaber kontaktieren</button>
+                <div class="shop-stats-sidebar">
+                    <p>233 Verkäufe</p>
+                    <p>64 Bewunderer</p>
+                </div>
+                <a href="#" class="report-shop">Diesen Shop an Etsy melden</a>
+            </aside>
+            <div class="shop-content">
+                <div class="shop-header-bar">
+                    <h2>Schaufenster</h2>
+                    <div class="shop-controls">
+                        <select class="sort-select">
+                            <option>Preis: Preis egal</option>
+                            <option>Preis: Niedrig bis Hoch</option>
+                            <option>Preis: Hoch bis Niedrig</option>
+                        </select>
+                        <select class="sort-select">
+                            <option>Sortieren: Relevanz</option>
+                            <option>Sortieren: Neueste</option>
+                            <option>Sortieren: Beliebt</option>
+                        </select>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work02.jpg" border="0" alt="Kurami Sticker Set">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                <div class="products-grid">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7480869111_pjta.avif" alt="NestUp Base Lattenrost">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                            <div class="video-badge">▶</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Base Lattenrost 90x200 für IKEA KURA Bett</h3>
+                            <div class="product-price">50,15 € <span class="original-price">59,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Sticker Set</h2>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7481125927_ky7e.avif" alt="NestUp Base Lattenrost">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                            <div class="video-badge">▶</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Base – Lattenrost 90x200 für IKEA KURA</h3>
+                            <div class="product-price">50,15 € <span class="original-price">59,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★☆ (64)</div>
-                        <div class="product-price">€5.99</div>
-                        Set of 10 adorable waterproof stickers for laptops, phones & more
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7486031071_tkcw.avif" alt="NestUp Platte">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Platte – Zusatzplatte für IKEA KURA</h3>
+                            <div class="product-price">126,65 € <span class="original-price">149,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7486031071_tkcw.avif" alt="NestUp Platte">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Platte – Zusatzplatte für IKEA KURA</h3>
+                            <div class="product-price">126,65 € <span class="original-price">149,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work03.jpg" border="0" alt="Kurami Tote Bag">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7480869111_pjta.avif" alt="Dach MATAHARI">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dach MATAHARI Holzdach für das IKEA KURA Bett</h3>
+                            <div class="product-price">67,15 € <span class="original-price">79,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Tote Bag</h2>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7481125927_ky7e.avif" alt="Dach PELANGI PLUS">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dach PELANGI PLUS Holzdach für IKEA KURA Bett</h3>
+                            <div class="product-price">109,65 € <span class="original-price">129,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (142)</div>
-                        <div class="product-price">€18.99</div>
-                        Eco-friendly canvas tote bag with printed Kurami design
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7486031071_tkcw.avif" alt="Schlafgitter NIVO">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Schlafgitter NIVO für IKEA KURA Bett</h3>
+                            <div class="product-price">71,40 € <span class="original-price">84,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7480869111_pjta.avif" alt="NestUp Base">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Base – Maßgefertigter Lattenrost</h3>
+                            <div class="product-price">50,15 € <span class="original-price">59,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work04.jpg" border="0" alt="Kurami Mug">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Mug</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (97)</div>
-                        <div class="product-price">€12.99</div>
-                        Ceramic mug with cute Kurami print, dishwasher safe
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work08.jpg" border="0" alt="Kurami Pin Set">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                        <div class="badge-sale">SALE</div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Pin Set</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★☆ (53)</div>
-                        <div class="product-price"><span class="price-old">€9.99</span> €7.99</div>
-                        Set of 3 enamel pins with different Kurami expressions
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work05.jpg" border="0" alt="Kurami Pillow">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Pillow</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (156)</div>
-                        <div class="product-price">€29.99</div>
-                        Soft cushion pillow with embroidered Kurami, perfect for couch or bed
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="il_794xN.7481125927_ky7e.avif" alt="NestUp Base Lattenrost">
+                            <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                            <div class="video-badge">▶</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>NestUp Base Lattenrost 90x200 für IKEA KURA</h3>
+                            <div class="product-price">50,15 € <span class="original-price">59,00 €</span> <span class="discount">(15% Rabatt)</span></div>
+                        </div>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work06.jpg" border="0" alt="Kurami Phone Case">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Phone Case</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (113)</div>
-                        <div class="product-price">€15.99</div>
-                        Protective phone case with cute Kurami design - multiple sizes available
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card product-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work09.jpg" border="0" alt="Kurami Art Print">
-                        <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
-                        <div class="badge-new">NEW</div>
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Kurami Art Print</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <div class="product-rating">★★★★★ (41)</div>
-                        <div class="product-price">€19.99</div>
-                        High-quality art print on premium paper, ready to frame
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent add-to-cart-btn">
-                            <i class="material-icons">shopping_cart</i> Add to Cart
-                        </button>
-                        <a class="mdl-button mdl-js-button" href="portfolio-example01.html">Details</a>
+                <div class="all-items-section">
+                    <h2>Alle Artikel</h2>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="il_794xN.7480869111_pjta.avif" alt="Product">
+                                <div class="favorite-icon"><i class="material-icons">favorite_border</i></div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Weitere IKEA KURA Produkte verfügbar</h3>
+                                <div class="product-price">Verschiedene Preise</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">I LOVE KURA EU</div>
-                    <p class="footer-tagline">Handmade with love ❤️</p>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+            <footer class="shop-footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 ILOVEKURAeu - Alle Rechte vorbehalten</p>
+                    <div class="footer-links">
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                        <a href="#">AGB</a>
+                    </div>
                 </div>
             </footer>
         </main>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="script.js"></script>
 </body>
 
